@@ -32,6 +32,7 @@ public class OrderIdUtils implements Serializable {
      * 生成订单号
      */
     public synchronized String nextId(){
+        System.out.println(11);
         Date now=new Date();
         String time= DateFormatUtils.format(now,"yyMMddHHmmssSSS");
         long timestamp = now.getTime();
